@@ -9,7 +9,7 @@ function showCancel(){
     alert("Cancelaste las notificaciones, joder ");
 
 }
-ask("Santi Manotea quiere enviarte notificaciones" ,showOk, showCancel);
+ask("Independiente quiere enviarte notificaciones" ,showOk, showCancel);
 let dinero =prompt("Que monto desea donar para salvar a Independiente de la B (de vuelta) " , 100);//seguir este patron
 if(dinero >=10000){
     //10000 pesos
@@ -25,6 +25,9 @@ if(dinero >=10000){
 }
 
 console.log('console de control');
+var js = ['Que Jodido','Es El','DOM','De','Javascript!!'];
+console.log(js);
+console.table(js);
 const allSideMenu = document.querySelectorAll('#sidebar .side-menu.top li a');
 //Sidebar
 allSideMenu.forEach(item=> {
