@@ -10,7 +10,21 @@ function showCancel(){
 
 }
 ask("Santi Manotea quiere enviarte notificaciones" ,showOk, showCancel);
-console.log('hola');
+let dinero =prompt("Que monto desea donar para salvar a Independiente de la B (de vuelta) " , 100);//seguir este patron
+if(dinero >=10000){
+    //10000 pesos
+    bienvenido();
+   function bienvenido(){
+      alert("Gracias por apoyar a IndeBendiente te  ganaste una entrada para el Clasico Independiente VS El Porvenir ");
+    }
+}else{
+    bienvenido();
+    function bienvenido(){
+        alert("Pero que mishiaduro y pecho frio!!!!");
+    }
+}
+
+console.log('console de control');
 const allSideMenu = document.querySelectorAll('#sidebar .side-menu.top li a');
 
 allSideMenu.forEach(item=> {
