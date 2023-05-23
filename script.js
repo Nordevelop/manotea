@@ -9,7 +9,7 @@ function showCancel(){
     alert("Cancelaste las notificaciones, joder ");
 
 }
-ask("Infomierda quiere enviarte notificaciones" ,showOk, showCancel);
+ask("Santi Manotea quiere enviarte notificaciones" ,showOk, showCancel);
 console.log('hola');
 const allSideMenu = document.querySelectorAll('#sidebar .side-menu.top li a');
 
