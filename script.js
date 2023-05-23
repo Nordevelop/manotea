@@ -1,3 +1,15 @@
+function ask(question, yes, no) {
+    if(confirm(question)) yes()
+    else no();
+}
+function showOk(){
+    alert("Aceptado las notificaciónes ");
+}
+function showCancel(){
+    alert("Cancelaste las notificaciones, joder ");
+
+}
+ask("Infomierda quiere enviarte notificaciones" ,showOk, showCancel);
 console.log('hola');
 const allSideMenu = document.querySelectorAll('#sidebar .side-menu.top li a');
 
