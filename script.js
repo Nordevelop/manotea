@@ -26,7 +26,7 @@ if(dinero >=10000){
 
 console.log('console de control');
 const allSideMenu = document.querySelectorAll('#sidebar .side-menu.top li a');
-
+//Sidebar
 allSideMenu.forEach(item=> {
 	const li = item.parentElement;
 
@@ -54,7 +54,7 @@ menuBar.addEventListener('click', function () {
 const searchButton = document.querySelector('#content nav form .form-input button');
 const searchButtonIcon = document.querySelector('#content nav form .form-input button .bx');
 const searchForm = document.querySelector('#content nav form');
-
+//Button Search
 searchButton.addEventListener('click', function (e) {
 	if(window.innerWidth < 576) {
 		e.preventDefault();
@@ -88,7 +88,7 @@ window.addEventListener('resize', function () {
 
 
 const switchMode = document.getElementById('switch-mode');
-
+//Switch mode light/dark
 switchMode.addEventListener('change', function () {
 	if(this.checked) {
 		document.body.classList.add('dark');
