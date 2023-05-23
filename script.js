@@ -26,10 +26,10 @@ allSideMenu.forEach(item=> {
 	item.addEventListener('click', function () {
 		allSideMenu.forEach(i=> {
 			i.parentElement.classList.remove('active');
-		})
+		}
 		li.classList.add('active');
-	})
-});
+	}
+}
 
 
 
@@ -40,11 +40,7 @@ const sidebar = document.getElementById('sidebar');
 
 menuBar.addEventListener('click', function () {
 	sidebar.classList.toggle('hide');
-})
-
-
-
-
+}
 
 
 
@@ -62,7 +58,7 @@ searchButton.addEventListener('click', function (e) {
 			searchButtonIcon.classList.replace('bx-x', 'bx-search');
 		}
 	}
-})
+}
 
 
 
@@ -81,7 +77,7 @@ window.addEventListener('resize', function () {
 		searchButtonIcon.classList.replace('bx-x', 'bx-search');
 		searchForm.classList.remove('show');
 	}
-})
+}
 
 
 
