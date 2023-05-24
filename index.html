@@ -301,6 +301,71 @@
 		<!-- MAIN -->
 	</section>
 	<!-- CONTENT -->
+	 <script>
+    /*Metodo de uso 
+    Creamos una nueva instancia y asignamos el tipo de evento
+    ->success
+    ->error
+    ->warning
+    ->info
+    let options = {
+            head: '¡success!',
+            msg: 'We write the message that we want to notify',
+            timer: 3000
+    }
+    let notify = new ToastNotify('success', options)
+    */
+    successo.addEventListener('click', (e) => {
+        new ToastNotify('success', {
+            head: '¡exito!',
+            msg: 'Mensaje exitosamente a mostrar en la notificacion',
+            timer: 3000
+        });
+    });
+    errores.addEventListener('click', (e) => {
+        new ToastNotify('error', {
+            head: '¡error!',
+            msg: 'Mensaje de error a mostrar en la notificacion',
+            timer: 3000
+        });
+    });
+    informacion.addEventListener('click', (e) => {
+        new ToastNotify('info', {
+            head: '¡info!',
+            msg: 'Mensaje informativo a mostrar en la notificacion',
+            timer: 3000
+        });
+    });    
+    advertencia.addEventListener('click', (e) => {
+        new ToastNotify('warning', {
+            head: '¡warning!',
+            msg: `Mensaje de advertencia ¿Acepta las condiciones? 
+            prseione X para cerrar el ToastNotify/Denegar, 
+            pusle el boton aceptar caso afirmativo
+            <div class="row">
+                <div class="col d-flex justify-content-end">
+                  <button class="btn btn-light border btn-sm" onclick="accion()">acepto</button>
+                </div>
+            </div>          
+            `
+        });
+    });
+    function accion() {
+        let t = document.querySelector('.toastflo');
+        t.classList.add("hide");
+        if (t.timeoutId) clearTimeout(t.timeoutId);
+        setTimeout(() => {
+            t.remove();
+            setTimeout(() => {
+                new Notify('info', {
+                    head: '¡info!',
+                    msg: 'La accion aceptar a sido pulsada, continuemos',
+                    timer: 2000
+                });
+            }, 250);
+        }, 500);
+    }
+    </script>
 	
 
 	<script src="script.js"></script>
