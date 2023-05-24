@@ -15,7 +15,7 @@ if(dinero >=10000){
     //10000 pesos
     bienvenido();
    function bienvenido(){
-      alert("Gracias por apoyar a IndeBendiente te  ganaste una entrada para el Clasico Independiente VS El Porvenir ");
+      alert("Gracias por apoyar a IndeBendiente te ganaste una entrada para el Clasico de Avellaneda: Independiente VS El Porvenir ");
     }
 }else{
     bienvenido();
