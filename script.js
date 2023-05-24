@@ -9,7 +9,7 @@ function showCancel(){
     alert("Cancelaste las notificaciones, joder ");
 
 }
-ask("Independiente quiere enviarte notificaciones" ,showOk, showCancel);
+ask("Santi Manotea quiere enviarte notificaciones" ,showOk, showCancel);
 let dinero =prompt("Que monto desea donar para salvar a Independiente de la B (de vuelta) " , 100);//seguir este patron
 if(dinero >=10000){
     //10000 pesos
