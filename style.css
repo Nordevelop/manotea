@@ -479,7 +479,7 @@ body {
 	background: var(--red);
 }
 #content main .table-data .order table tr td .status.process {
-	background: var(--dark);
+	background: var(--green);
 }
 #content main .table-data .order table tr td .status.pending {
 	background: var(--orange);
@@ -510,7 +510,7 @@ body {
 	border-left: 10px solid var(--blue);
 }
 #content main .table-data .todo .todo-list li.not-completed {
-	border-left: 10px solid var(--orange);
+	border-left: 10px solid var(--red);
 }
 #content main .table-data .todo .todo-list li:last-child {
 	margin-bottom: 0;
